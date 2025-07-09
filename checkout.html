@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Checkout</h1></header>
+
+  <main>
+    <h2>Checkout</h2>
+
+    <!-- ✅ Order Summary Section -->
+    <section id="order-summary"></section>
+
+    <!-- ✅ Single Clean Form -->
+    <form id="checkout-form">
+      <h3>Shipping Info</h3>
+      <label>Name: <input type="text" id="name" required /></label><br>
+      <label>Phone: <input type="tel" id="phone" required /></label><br>
+      <label>Address:<br><textarea id="address" required></textarea></label><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2025 Elegance-Fashion</p></footer>
+  <script src="checkout.js"></script>
+</body>
+</html>

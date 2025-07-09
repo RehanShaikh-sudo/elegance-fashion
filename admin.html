@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Admin - Add Products</h1></header>
+  <main>
+
+    <!-- 🟡 Product Form -->
+    <form id="product-form">
+      <input type="hidden" id="editIndex" value="-1" />
+      
+      <input type="text" id="name" placeholder="Product Name" required />
+      <input type="number" id="price" placeholder="Price (₹)" required />
+      <textarea id="description" placeholder="Description" rows="3" required></textarea>
+      <input type="number" id="stock" placeholder="Stock Count" required />
+
+      <!-- Image uploader and image URL preview -->
+      <input type="file" id="imageUpload" accept="image/*" />
+      <input type="hidden" id="image" />
+
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Men">Men</option>
+        <option value="Women">Women</option>
+        <option value="Kids">Kids</option>
+      </select>
+
+      <button type="submit" id="submit-btn">Add Product</button>
+    </form>
+
+    <!-- 🔵 Product List Display -->
+    <section id="admin-products" class="product-grid"></section>
+
+  </main>
+  <footer><p>&copy; 2025 Admin Panel</p></footer>
+
+  <!-- 🔗 JavaScript -->
+  <script src="admin.js"></script>
+</body>
+</html>
