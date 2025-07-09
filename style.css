@@ -19,14 +19,9 @@ nav {
 }
 
 nav a {
-  background: #28a745;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
+  color: #ffc107;
   margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 nav a:hover {
